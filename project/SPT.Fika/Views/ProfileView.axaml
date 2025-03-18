@@ -1,0 +1,25 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:fika="using:SPT.Fika.CustomControls"
+             xmlns:vm="using:SPT.Fika.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="350"
+             x:Class="SPT.Fika.Views.ProfileView">
+
+    <Design.DataContext>
+        <vm:ProfileViewModel />
+    </Design.DataContext>
+
+    <Grid RowDefinitions="AUTO,10,AUTO" ColumnDefinitions="*">
+        <!-- Players Online -->
+        <fika:OnlinePlayers Grid.Row="0"
+                           OnlinePlayersCount="{Binding OnlinePlayersCount}"
+                           UpdateOnlinePlayersCommand="{Binding UpdateOnlinePlayersCommand}" />
+
+        <!-- Dedicated status -->
+        <fika:DedicatedStatus Grid.Row="2"
+                             DediAvailabilityColor="{Binding DediAvailabilityColor}"
+                             DediAvailabilityText="{Binding DediAvailabilityText}" />
+    </Grid>
+</UserControl>

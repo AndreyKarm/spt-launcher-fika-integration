@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.0.5" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.0.5" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SPT.ByteBanger\SPT.ByteBanger.csproj" />
+    <ProjectReference Include="..\SPT.Launcher.Base\SPT.Launcher.Base.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+
+    <AvaloniaXaml Update="Assets\Styles.axaml">
+      <SubType>Designer</SubType>
+    </AvaloniaXaml>
+  </ItemGroup>
+
+</Project>

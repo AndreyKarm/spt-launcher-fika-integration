@@ -3,6 +3,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:cc="using:SPT.Launcher.CustomControls"
+             xmlns:fika="using:SPT.Fika.CustomControls"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="SPT.Launcher.Views.ProfileView">
 
@@ -32,6 +33,17 @@
                           StartGameCommand="{Binding StartGameCommand}"
                           LogoutCommand="{Binding LogoutCommand}"
                           />
+
+        <!-- Players Online -->
+        <fika:OnlinePlayers Grid.Row="1" Grid.Column="3"
+                           UpdateOnlinePlayersCommand="{Binding UpdateOnlinePlayersCommand}"
+                           />
+
+        <!-- Dedicated status -->
+        <fika:DedicatedStatus Grid.Row="3" Grid.Column="3"
+                             DediAvailabilityColor="{Binding DediAvailabilityColor}"
+                             DediAvailabilityText="{Binding DediAvailabilityText}"
+                             />
         
     </Grid>
 </UserControl>

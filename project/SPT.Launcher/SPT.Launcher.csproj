@@ -34,6 +34,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SPT.ByteBanger\SPT.ByteBanger.csproj" />
     <ProjectReference Include="..\SPT.Launcher.Base\SPT.Launcher.Base.csproj" />
+    <ProjectReference Include="..\SPT.Fika\SPT.Fika.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="zlib.net">
