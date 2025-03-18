@@ -117,7 +117,6 @@ namespace SPT.Launcher.Models.Launcher
             NextLvlExp = pInfo.NextLvlExp;
             RemainingExp = pInfo.RemainingExp;
             XPLevelProgress = pInfo.XPLevelProgress;
-            VersionMismatch = pInfo.VersionMismatch;
 
             SPT = pInfo.SPT;
         }
